@@ -10,38 +10,31 @@
 <style>
    
                /* Ensure the carousel container has fixed dimensions */
-               .carousel-container {
-      width: 100%; /* Adjust to your desired width */
-      max-width: 800px; /* Optional: set a maximum width */
-      margin: auto; /* Center the carousel */
-    }
+ 
 
     /* Ensure images are of the same height and width */
     .carousel-item img {
-      width: 100%; /* Make the image fill the width of the container */
+      /* width: 100%; Make the image fill the width of the container */
       height: 400px; /* Fixed height for all carousel images */
-      object-fit: cover; /* Ensure images cover the area without distortion */
+      /* object-fit: cover; Ensure images cover the area without distortion */
     }
 
     /* Optional: Style for carousel controls */
-    .carousel-control-prev,
-    .carousel-control-next {
-      width: 5%; /* Adjust the width of control buttons */
-    }
+  
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       background-color: rgba(0, 0, 0, 0.5); /* Background color for icons */
-      border-radius: 50%; /* Round control icons */
+      /* border-radius: 50%; Round control icons */
     }
 
           .card-container {
-      display: flex;
-      justify-content: space-between; /* Distribute space between cards */
-      flex-wrap: nowrap; /* Prevent wrapping */
+      /* display: flex; */
+      /* justify-content: space-between; Distribute space between cards */
+      /* flex-wrap: nowrap; Prevent wrapping */
       overflow-x: auto; /* Horizontal scroll if needed */
       gap: 16px; /* Space between cards */
-      padding: 16px; /* Padding around the container */
+      /* padding: 16px; Padding around the container */
     }
 
     .card {
@@ -94,7 +87,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <div class="d-flex justify-content-between"><div>   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -130,41 +123,41 @@
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Manage Your Content and Devices</a></li>
                 </ul>
-              </li>
+              </li></div>
 
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex " role="search">
+              <input class="form-control  me-2" style="width: 55vw !important;" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form></div>
           </div>
         </div>
       </nav>
            
-      <div id="carouselExample" class="carousel slide carousel-container">
+      <div id="carouselExample" class="carousel slide carousel-container m-auto w-100">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="../assets/photo-04.webp" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="../assets/photo-02.webp" class="d-block w-100" alt="...">
+            <img src="../assets/photo-02.webp" class="object-fit-cover  d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="../assets/photo-03.webp" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="carousel-control-prev w-5" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon rounded-circle" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <button class="carousel-control-next w-5" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon rounded-circle" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     
       
       <div class="container mt-4">
-        <div class="card-container">
+        <div class="card-container d-flex justify-content-between flex-nowrap p-auto">
           <div class="card">
             <img src="../assets/card-01.webp" class="card-img-top" alt="Image 1">
             <div class="card-body">
