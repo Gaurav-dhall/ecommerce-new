@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCT VIEW</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUCT VIEW</title>
 </head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid ">
-            <a class="navbar-brand" href="#">
-                <img src="../assets/bootstrap-logo-shadow.png" alt="Logo" width="30vw" height="24vh" class="d-inline-block align-text-top">
-                Bootstrap
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <div class="d-flex justify-content-between"><div>   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/bootstrap-logo-shadow.png" alt="Logo" width="30vw" height="24vh"
+          class="d-inline-block align-text-top">
+        Bootstrap
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-between">
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -25,10 +33,11 @@
                 <a class="nav-link" href="#">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Order</a>
+                <a class="nav-link" href="#">Cart</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Shop by Category
                 </a>
                 <ul class="dropdown-menu">
@@ -39,76 +48,666 @@
                   <li><a class="dropdown-item" href="#">Accessories</a></li>
                 </ul>
               </li>
-              
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   More
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Login</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Your Order</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Create a Wish List</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Manage Your Content and Devices</a></li>
                 </ul>
-              </li></div>
+              </li>
+          </div>
 
-            <form class="d-flex " role="search">
-              <input class="form-control  me-2" style="width: 55vw !important;" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form></div>
+          <form class="d-flex " role="search">
+            <input class="form-control  me-2" style="width: 55vw !important;" type="search" placeholder="Search"
+              aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card mb-3 container-fluid vh-100 mt-3" style="border: none;">
+    <div class="row g-0 vh-100 ">
+      <div class="col-4 border rounded-3  sticky-carousel" style="height: 90%;   position: sticky;
+      top: 80px; 
+      height: calc(100vh - 80px); 
+      overflow: hidden; ">
+
+        <div id="carouselExampleAutoplaying" class="carousel  slide h-100 border rounded-3 " data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner h-100 border rounded-3">
+            <div class="carousel-item active h-100 ">
+              <img src="../assets/pv1.webp" class="d-block  h-100" alt="...">
+
+            </div>
+            <div class="carousel-item h-100 h-100">
+              <img src="../assets/pv2.webp" class="d-block w-100 h-100" alt="...">
+
+            </div>
+            <div class="carousel-item h-100">
+              <img src="../assets/pv3.webp" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="../assets/pv4.webp" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="../assets/pv5.webp" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next h-100" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-8 " style=" overflow-y: auto;
+      max-height: 100vh; 
+      padding-left: 20px; ">
+        <div class="card-body">
+          <div class="d-flex mt-auto" style="width:75%; justify-content: space-between; align-items: center;">
+            <h4 class="card-title">Women Regular Fit Striped Button Down Collar Formal Shirt
+            </h4> <i class="fa-regular fa-heart"></i>
+          </div>
+          <!-- yha pe wishlist me add krne wala icon bhi bana sakte hai  -->
+          <div class="d-flex mt-auto justify-content-between "style="width: 21%;">
+            <div class="star d-flex align-items-center ">
+              <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+            </div>
+            <div class="noOfRatings">683 ratings</div>
+          </div>
+         <hr>
+          <div class="d-flex">
+          <div class="d-flex flex-column justify-content-between">
+           <div>
+          <span class="d-inline-block border mt-auto border-1 border-white fw-bold rounded bg-gradient bg-danger text-center text-light" style="width: 45%;">Limited time deal</span>
+         <span class="text-success fw-medium"> In Stock</span>
+          </div> 
+
+          <div class="price d-flex align-items-center justify-content-between"style="width: 7%">
+            <div class="discount text-danger">-72%off</div>
+
+          <div class="mrp d-flex align-items-center  justify-content-between" style="width: 5%;"><i class="fa-solid fa-indian-rupee-sign"></i> <h2>358</h2></div>
+          </div>
+
+          <span>MRP:-<span class="text-decoration-line-through">₹1299</span></span>
+          <span>Inclusive of all taxes</span>
+          <span>EMI starts at ₹124 per month.<!-- Example single danger button -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-success dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+               EMI-Options
+              </button>
+             
+            </div></span>
+
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto">
+          <button class="btn btn-warning btn-sm "  type="button">Buy Now</button>
+          <button class="btn btn-outline-warning btn-sm"  type="button">Add To Cart</button>
+        </div>
+      </div>
+       <hr>
+
+        <div class="d-flex justify-content-between fs-2 align-items-center " style="width: 10%;">
+          <i class="fa-solid fa-champagne-glasses"></i> 
+          <h5 class="fs-5">Offers:-</h5>
+        </div>
+          <div class="d-flex justify-content-between " style="width: 65%;">
+        <div class="card mt-3 border rounded-2 border-secondary-subtle " style="width: 12rem;">
+          <div class="card-body">
+            <h5 class="card-title">Bank offer</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Upto 70% off</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary">On axis bank credit card</h6>
+           
+            <a href="#" class="card-link">1 offer</a>
+            
           </div>
         </div>
-      </nav>
-
-      <div class="card mb-3 container-fluid vh-100 mt-3" style="border: none;">
-        <div class="row g-0 vh-100 " >
-          <div class="col-md-4 h-100 " style="width: 40%;">
-            <div id="carouselExampleAutoplaying" class="carousel slide h-100 border-rounded-3 " data-bs-ride="carousel">
-                <div class="carousel-inner h-100 border-rounded-3">
-                  <div class="carousel-item active h-100 border-rounded-3">
-                    <img src="../assets/card-03.webp" class="d-block  h-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block text-dark">
-                        <h5>KEY FEATURE 1</h5>
-                        <p>Description about that feature</p>
-                      </div>
-                  </div>
-                  <div class="carousel-item h-100 h-100">
-                    <img src="../assets/card-02.webp" class="d-block w-100 h-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block text-dark">
-                        <h5>KEY FEATURE 2</h5>
-                        <p>Description about that feature</p>
-                      </div>
-                  </div>
-                  <div class="carousel-item h-100">
-                    <img src="../assets/card-01.webp" class="d-block w-100 h-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block text-dark">
-                        <h5>KEY FEATURE 3</h5>
-                        <p>Description about that feature</p>
-                      </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next h-100" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+        <div class="card mt-3 border rounded-2 border-secondary-subtle " style="width: 12rem;">
+          <div class="card-body">
+            <h5 class="card-title">Bank offer</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Upto 70% off</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary">On axis bank credit card</h6>
+           
+            <a href="#" class="card-link">1 offer</a>
+            
           </div>
-          <div class="col-md-8 w-25">
-            <div class="card-body">
-              <h5 class="card-title">Bacca Bucci Emma Low-top Platform Fashion Sneakers for Women | Streetwear Chunky Sneakers with Light-Weight Outsole</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+        <div class="card mt-3 border rounded-2 border-secondary-subtle " style="width: 12rem;">
+          <div class="card-body">
+            <h5 class="card-title">Bank offer</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Upto 70% off</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary">On axis bank credit card</h6>
+           
+            <a href="#" class="card-link">1 offer</a>
+            
+          </div>
+        </div></div>
+       <hr>
+        <div class="drop d-flex ">
+       
+       <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Size
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">S</a></li>
+          <li><a class="dropdown-item" href="#">M</a></li>
+          <li><a class="dropdown-item" href="#">L</a></li>
+          <li><a class="dropdown-item" href="#">XL</a></li>
+          <li><a class="dropdown-item" href="#">XXL</a></li>
+        </ul>
+      </div>
+       <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Color
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Black</a></li>
+          <li><a class="dropdown-item" href="#">Maroon</a></li>
+          <li><a class="dropdown-item" href="#">Grey</a></li>
+          <li><a class="dropdown-item" href="#">Green</a></li>
+          <li><a class="dropdown-item" href="#">Pista Green</a></li>
+        </ul>
+      </div>
+
+     
+
+        </div>
+
+    <h4>
+      Product Details
+    </h4>
+    <ul style="list-style-type: none;">
+      <li>Material composition:Viscose Rayon</li>
+      <li>Pattern:Solid</li>
+      <li>Fit type:Oversized Fit</li>
+      <li>Sleeve type:Long Sleeve</li>
+      <li>Collar style:Club Collar</li>
+      <li>Neck style:Collared Neck</li>
+      <li>Country of Origin:India</li>
+    </ul>
+
+    <H4>About this item</H4>
+    <ul>
+      <li>Fit Type: Regular Fit</li>
+      <li>Size Details : S - 34 Chest/32 Waist , M - 36 Chest/34 Waist, L - 38 Chest/36 Waist , XL - 40 Chest/38 Waist</li>
+      <li>Product Length varies from 24.5 to 26.5 inches based on size available from S to XL</li>
+      <li>Sleeve: Full Sleeves</li>
+      <li>Occasion : Business, Party wear- Best suited with official attire.</li>
+    </ul>
+    <H4>Additional Information</H4>
+    <ul>
+      <li>Manufacturer:Bhumika Garments, SYS ONLINE STORE</li>
+      <li>Packer:Bhumika Garments</li>
+      <li>PItem Weight:350 g</li>
+      <li>Item Dimensions LxWxH22 x 12 x 5 Centimeters</li>
+      <li>Net Quantity1.00 count</li>
+    </ul>
+
+    <div>
+
+    </div>
+    
+        </div>
+      </div>
+    </div>
+</div>
+   <hr>
+
+    <h2>Production Description</h2>
+    <p>Trendy and appealing, this shirt from FUNDAY FASHION exclusive collection will surely impress fashionable women. This shirt will surely add unique charm to your casual as well as party look. Made from soft fabric, this top will help you stay relaxed all day long. 100% Satisfaction is guaranteed. We Also manufacture shirts, t-shirts,tops for women Western, Casual, Formal, Stylish, latest tops for Women.</p>
+
+   <hr>
+    <h2>Product Details</h2>
+    <p><ul>
+      <li>Product Dimensions :22 x 12 x 5 cm; 350 g</li>
+      <li>Date First Available : 29 April 2023</li>
+      <li>Manufacturer Bhumika Garments</li>
+      <li>ASIN B0C3XSVCXX</li>
+      <li>Item model number SYS-4868-69</li>
+      <li>Country of Origin India</li> 
+      <li>Department Women</li>
+      <li>Manufacturer Bhumika Garments, SYS ONLINE STORE</li>
+      <li>Packer Bhumika Garments</li>
+      <li>Item Weight 350 g</li>
+      <li>Item Dimensions LxWxH 22 x 12 x 5 Centimeters
+      </li>
+      <li>Net Quantity 1.00 count</li>
+      <li>Best Sellers Rank: #230 in Clothing & Accessories</li>
+      <li>#1 in Women's Blouses & Shirts</li>
+    </ul></p>
+
+   <hr>
+
+    <h2>More items you may like</h2>
+
+   
+    
+    <div class="d-flex  mx-2 " style="height: 20%;">
+
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/rp1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-text">
+          <h5>Leriya fashion</h2>
+            <p class="overflow-x-hidden">Oversized shirt for women | shirt for women</p>
+            <div class="d-flex mt-auto justify-content-between "style="width: 21%;">
+              <div class="star d-flex align-items-center ">
+                <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <div class="noOfRatings">683</div>
             </div>
+            <span class="d-inline-block border mt-2 border-1 border-white fw-bold rounded bg-gradient bg-danger text-center text-light" style="width:100%;">Limited time deal</span>
+            <div class="price d-flex align-items-center justify-content-between"style="width:40%">
+              <div class="discount text-danger">-72%off</div>
+    
+            <div class="mrp d-flex align-items-center  justify-content-between" style="width: 5%;"><i class="fa-solid fa-indian-rupee-sign"></i> <h5>358</h5></div>
+          </div>
+            <span>MRP:-<span class="text-decoration-line-through">₹1299</span></span>
           </div>
         </div>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+     
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/rp2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-text">
+          <h5>Leriya fashion</h2>
+            <p class="overflow-x-hidden">Oversized shirt for women | shirt for women</p>
+            <div class="d-flex mt-auto justify-content-between "style="width: 21%;">
+              <div class="star d-flex align-items-center ">
+                <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <div class="noOfRatings">683</div>
+            </div>
+            <span class="d-inline-block border mt-2 border-1 border-white fw-bold rounded bg-gradient bg-danger text-center text-light" style="width:100%;">Limited time deal</span>
+            <div class="price d-flex align-items-center justify-content-between"style="width:40%">
+              <div class="discount text-danger">-72%off</div>
+    
+            <div class="mrp d-flex align-items-center  justify-content-between" style="width: 5%;"><i class="fa-solid fa-indian-rupee-sign"></i> <h5>358</h5></div>
+          </div>
+            <span>MRP:-<span class="text-decoration-line-through">₹1299</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/rp3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-text">
+          <h5>Leriya fashion</h2>
+            <p class="overflow-x-hidden">Oversized shirt for women | shirt for women</p>
+            <div class="d-flex mt-auto justify-content-between "style="width: 21%;">
+              <div class="star d-flex align-items-center ">
+                <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <div class="noOfRatings">683</div>
+            </div>
+            <span class="d-inline-block border mt-2 border-1 border-white fw-bold rounded bg-gradient bg-danger text-center text-light" style="width:100%;">Limited time deal</span>
+            <div class="price d-flex align-items-center justify-content-between"style="width:40%">
+              <div class="discount text-danger">-72%off</div>
+    
+            <div class="mrp d-flex align-items-center  justify-content-between" style="width: 5%;"><i class="fa-solid fa-indian-rupee-sign"></i> <h5>358</h5></div>
+          </div>
+            <span>MRP:-<span class="text-decoration-line-through">₹1299</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/rp4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="card-text">
+          <h5>Leriya fashion</h2>
+            <p class="overflow-x-hidden">Oversized shirt for women | shirt for women</p>
+            <div class="d-flex mt-auto justify-content-between "style="width: 21%;">
+              <div class="star d-flex align-items-center ">
+                <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <div class="noOfRatings">683</div>
+            </div>
+            <span class="d-inline-block border mt-2 border-1 border-white fw-bold rounded bg-gradient bg-danger text-center text-light" style="width:100%;">Limited time deal</span>
+            <div class="price d-flex align-items-center justify-content-between"style="width:40%">
+              <div class="discount text-danger">-72%off</div>
+    
+            <div class="mrp d-flex align-items-center  justify-content-between" style="width: 5%;"><i class="fa-solid fa-indian-rupee-sign"></i> <h5>358</h5></div>
+          </div>
+            <span>MRP:-<span class="text-decoration-line-through">₹1299</span></span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/rp5.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <div class="card-text">
+          <h5>Leriya fashion</h2>
+            <p class="overflow-x-hidden">Oversized shirt for women | shirt for women</p>
+            <div class="d-flex mt-auto justify-content-between "style="width: 21%;">
+              <div class="star d-flex align-items-center ">
+                <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <div class="noOfRatings">683</div>
+            </div>
+            <span class="d-inline-block border mt-2 border-1 border-white fw-bold rounded bg-gradient bg-danger text-center text-light" style="width:100%;">Limited time deal</span>
+            <div class="price d-flex align-items-center justify-content-between"style="width:40%">
+              <div class="discount text-danger">-72%off</div>
+    
+            <div class="mrp d-flex align-items-center  justify-content-between" style="width: 5%;"><i class="fa-solid fa-indian-rupee-sign"></i> <h5>358</h5></div>
+          </div>
+            <span>MRP:-<span class="text-decoration-line-through">₹1299</span></span>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+  </div>
+
+ <hr>
+
+  <H2>Rating and reviews:-</H2>
+    <!-- rating stars -->
+  <div class="d-flex mt-auto position-relative start-50 justify-content-center "style="width: 13%; transform:scale(2);">
+    <div class="star d-flex align-items-center ">
+      <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+        class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+    </div>
+    <div class="noOfRatings">683 ratings</div>
+  </div>
+
+  <!-- rating stars ends and users comments start -->
+
+  <div class="card border-secondary mb-3 mt-3" style="max-width: 100%;">
+   <!-- single liner and star -->
+   
+   <div class="card-header">  
+    <!-- flex for star and profile -->
+     <div class="d-flex justify-content-start g align-items-center ">
+    <!-- star --><div class="star d-flex align-items-center flex-grow-2 ">
+    <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+      class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+  </div> <!-- profile icon -->
+  <i class="fa-solid fa-user"></i> </div>
+ 
+  <!-- single liner --> 
+  <h3> Comfortable,soft cotton overall good product</h3>
+
+ </div>
+
+    <div class="card-body text-secondary">
+      <!-- name -->
+
+      <h5 class="card-title text-dark">Priyal Singh</h5>
+      <!-- mainmsg -->
+      <p class="card-text">I had ordered pink shirt but the colour looked dull on my skin tone. Now I have exchanged it with white shirt, and seriously it looks soo good.👌🏻
+        I mainly focus on the comfort of the design and the fabric, and both in this case are perfect. 🤌🏻
+        Very comfortable, pure cotton, looks very good on me.👌🏻✨
+        
+        But remember it is oversized, I read it in one of the reviews and I ordered accordingly that's why I didn't have issues with the size..</p>
+        <!-- date --> <div class="card-footer text-body-secondary"></div>
+    15th october
+  </div>
+    </div>
+
+    <!-- rating end here  -->
+
+    
+  <!-- rating stars ends and users comments start -->
+
+  <div class="card border-secondary mb-3 mt-3" style="max-width: 100%;">
+    <!-- single liner and star -->
+    
+    <div class="card-header">  
+     <!-- flex for star and profile -->
+      <div class="d-flex justify-content-start g align-items-center ">
+     <!-- star --><div class="star d-flex align-items-center flex-grow-2 ">
+     <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+       class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+   </div> <!-- profile icon -->
+   <i class="fa-solid fa-user"></i> </div>
+  
+   <!-- single liner --> 
+   <h3> Comfortable,soft cotton overall good product</h3>
+ 
+  </div>
+ 
+     <div class="card-body text-secondary">
+       <!-- name -->
+ 
+       <h5 class="card-title text-dark">Priyal Singh</h5>
+       <!-- mainmsg -->
+       <p class="card-text">I had ordered pink shirt but the colour looked dull on my skin tone. Now I have exchanged it with white shirt, and seriously it looks soo good.👌🏻
+         I mainly focus on the comfort of the design and the fabric, and both in this case are perfect. 🤌🏻
+         Very comfortable, pure cotton, looks very good on me.👌🏻✨
+         
+         But remember it is oversized, I read it in one of the reviews and I ordered accordingly that's why I didn't have issues with the size..</p>
+         <!-- date --> <div class="card-footer text-body-secondary"></div>
+     15th october
+   </div>
+     </div>
+ 
+     <!-- rating end here  -->
+
+     
+  <!-- rating stars ends and users comments start -->
+
+  <div class="card border-secondary mb-3 mt-3" style="max-width: 100%;">
+    <!-- single liner and star -->
+    
+    <div class="card-header">  
+     <!-- flex for star and profile -->
+      <div class="d-flex justify-content-start g align-items-center ">
+     <!-- star --><div class="star d-flex align-items-center flex-grow-2 ">
+     <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+       class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+   </div> <!-- profile icon -->
+   <i class="fa-solid fa-user"></i> </div>
+  
+   <!-- single liner --> 
+   <h3> Comfortable,soft cotton overall good product</h3>
+ 
+  </div>
+ 
+     <div class="card-body text-secondary">
+       <!-- name -->
+ 
+       <h5 class="card-title text-dark">Priyal Singh</h5>
+       <!-- mainmsg -->
+       <p class="card-text">I had ordered pink shirt but the colour looked dull on my skin tone. Now I have exchanged it with white shirt, and seriously it looks soo good.👌🏻
+         I mainly focus on the comfort of the design and the fabric, and both in this case are perfect. 🤌🏻
+         Very comfortable, pure cotton, looks very good on me.👌🏻✨
+         
+         But remember it is oversized, I read it in one of the reviews and I ordered accordingly that's why I didn't have issues with the size..</p>
+         <!-- date --> <div class="card-footer text-body-secondary"></div>
+     15th october
+   </div>
+     </div>
+ 
+     <!-- rating end here  -->
+
+     
+  <!-- rating stars ends and users comments start -->
+
+  <div class="card border-secondary mb-3 mt-3" style="max-width: 100%;">
+    <!-- single liner and star -->
+    
+    <div class="card-header">  
+     <!-- flex for star and profile -->
+      <div class="d-flex justify-content-start g align-items-center ">
+     <!-- star --><div class="star d-flex align-items-center flex-grow-2 ">
+     <div>3.8</div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+       class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+   </div> <!-- profile icon -->
+   <i class="fa-solid fa-user"></i> </div>
+  
+   <!-- single liner --> 
+   <h3> Comfortable,soft cotton overall good product</h3>
+ 
+  </div>
+ 
+     <div class="card-body text-secondary">
+       <!-- name -->
+ 
+       <h5 class="card-title text-dark">Priyal Singh</h5>
+       <!-- mainmsg -->
+       <p class="card-text">I had ordered pink shirt but the colour looked dull on my skin tone. Now I have exchanged it with white shirt, and seriously it looks soo good.👌🏻
+         I mainly focus on the comfort of the design and the fabric, and both in this case are perfect. 🤌🏻
+         Very comfortable, pure cotton, looks very good on me.👌🏻✨
+         
+         But remember it is oversized, I read it in one of the reviews and I ordered accordingly that's why I didn't have issues with the size..</p>
+         <!-- date --> <div class="card-footer text-body-secondary"></div>
+     15th october
+   </div>
+     </div>
+     <!-- read more reviews button  -->
+     <button type="button" class="btn btn-info">Read more reviews</button>
+
+     <!-- rating end here  -->
+<hr>
+      <!-- back to top btn  -->
+     <button class="btn btn-primary btn-lg" style="width: 100%;" type="button">Back to top</button>
+
+
+
+ 
+   
+    <!-- Footer -->
+<footer style="background-color: rgb(16, 16, 16); color: white; padding: 20px;">
+  <div class="container">
+    <div class="row">
+      <!-- List 1: Get to Know Us -->
+      <div class="col-md-3">
+        <h5 style="font-weight: 400;">Get to Know Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" style="color: white; text-decoration: none;">About Us</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Careers</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Press Releases</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Science</a></li>
+        </ul>
+      </div>
+      
+      <!-- List 2: Connect with Us -->
+      <div class="col-md-3">
+        <h5 style="font-weight: 400;">Connect with Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" style="color: white; text-decoration: none;">Facebook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Twitter</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Instagram</a></li>
+        </ul>
+      </div>
+      
+      <!-- List 3: Make Money with Us -->
+      <div class="col-md-3">
+        <h5 style="font-weight: 400;">Make Money with Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" style="color: white; text-decoration: none;">Sell on Platform</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Sell under Accelerator</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Protect and Build Your Brand</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Global Selling</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Supply to Platform</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Become an Affiliate</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Fulfilment by Platform</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Advertise Your Products</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Platform Pay on Merchants</a></li>
+        </ul>
+      </div>
+      
+      <!-- List 4: Let Us Help You -->
+      <div class="col-md-3">
+        <h5 style="font-weight: 400;">Let Us Help You</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" style="color: white; text-decoration: none;">Your Account</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Returns Centre</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Recalls and Product Safety Alerts</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">100% Purchase Protection</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">App Download</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Help</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <hr style="border-color: white;">
+
+    <!-- Language and Country Dropdowns -->
+    <div class="row">
+      <div class="col-md-6">
+        <select class="form-select" aria-label="Language select" style="background-color: black; color: white;">
+          <option selected>English</option>
+          <option value="1">Español</option>
+          <option value="2">Français</option>
+          <option value="3">Deutsch</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <select class="form-select" aria-label="Country select" style="background-color: black; color: white;">
+          <option selected>United States</option>
+          <option value="1">India</option>
+          <option value="2">United Kingdom</option>
+          <option value="3">Australia</option>
+        </select>
+      </div>
+    </div>
+    
+    <hr style="border-color: white;">
+
+    <!-- Company Logo and Name -->
+    <div class="row text-center">
+      <div class="col-md-12">
+        <img src="your-logo-url-here" alt="Company Logo" style="width: 100px; margin-top: 10px;">
+        <p style="color: white; margin-top: 10px;">© 2024 Your Company Name</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b06fab8130.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
