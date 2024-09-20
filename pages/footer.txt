@@ -9,7 +9,7 @@
                 <div class="col-md-3">
                   <h5 style="font-weight: 400;">Get to Know Us</h5>
                   <ul class="list-unstyled">
-                    <li><a href="#" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="aboutus.html" style="color: white; text-decoration: none;">About Us</a></li>
                     <li><a href="#" style="color: white; text-decoration: none;">Careers</a></li>
                     <li><a href="#" style="color: white; text-decoration: none;">Press Releases</a></li>
                     <li><a href="#" style="color: white; text-decoration: none;">Science</a></li>
