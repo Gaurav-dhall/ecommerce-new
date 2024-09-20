@@ -1,55 +1,70 @@
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../assets/bootstrap-logo-shadow.png" alt="Logo" width="30vw" height="24vh" class="d-inline-block align-text-top">
-                Bootstrap
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <div class="d-flex justify-content-between"><div>   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="container-fluid ps-4" style="width: 100%;">
+      <a class="navbar-brand " href="Home.html">
+        <img src="../assets/logonew.svg" alt="Logo" width="20" height="20"
+          class="d-inline-block align-text-top mt-1 mx-5" style="transform: scale(6.75);" >
+      
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-between">
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link " aria-current="page" href="Home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="products.html">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cart</a>
+                <a class="nav-link" href="cart.html">Cart</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="category.html" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Shop by Category
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Men</a></li>
-                  <li><a class="dropdown-item" href="#">Women</a></li>
-                  <li><a class="dropdown-item" href="#">Kids</a></li>
-                  <li><a class="dropdown-item" href="#">Beauty</a></li>
-                  <li><a class="dropdown-item" href="#">Accessories</a></li>
+                  <li><a class="dropdown-item" href="category.html">Men</a></li>
+                  <li><a class="dropdown-item" href="category.html">Women</a></li>
+                  <li><a class="dropdown-item" href="category.html">Kids</a></li>
+                  <li><a class="dropdown-item" href="category.html">Beauty</a></li>
+                  <li><a class="dropdown-item" href="category.html">Accessories</a></li>
                 </ul>
               </li>
-              
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   More
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Login</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Your Order</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="contactus.html">Contact us</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="orderconfirmation.html">Your Order</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Create a Wish List</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Manage Your Content and Devices</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="aboutus.html">About us</a></li>
                 </ul>
-              </li></div>
-
-            <form class="d-flex " role="search">
-              <input class="form-control  me-2" style="width: 55vw !important;" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form></div>
+              </li>
           </div>
+
+          <form class="d-flex " role="search">
+            <input class="form-control  me-2" style="width: 55vw !important;" type="search" placeholder="Search"
+              aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
